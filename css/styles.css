@@ -118,7 +118,7 @@ section.firstScreen .anchors .button {
   cursor: pointer;
 }
 
-section.firstScreen .anchors .anchor.wineCard:before {
+section.firstScreen .anchors .anchor.toWineCard:before {
   content: '';
   height: 50px;
   width: 0;
@@ -127,12 +127,12 @@ section.firstScreen .anchors .anchor.wineCard:before {
   background: url(../img/icons/down-arrow.png) center center/contain no-repeat;
 }
 
-section.firstScreen .anchors .anchor.wineCard:hover:before {
+section.firstScreen .anchors .anchor.toWineCard:hover:before {
   width: 20px;
   margin-right: 15px;
 }
 
-section.firstScreen .anchors .anchor.degust:after {
+section.firstScreen .anchors .anchor.toDegust:after {
   content: '';
   height: 50px;
   width: 0;
@@ -141,7 +141,7 @@ section.firstScreen .anchors .anchor.degust:after {
   background: url(../img/icons/down-arrow.png) center center/contain no-repeat;
 }
 
-section.firstScreen .anchors .anchor.degust:hover:after {
+section.firstScreen .anchors .anchor.toDegust:hover:after {
   width: 20px;
   margin-left: 15px;
 }
@@ -263,7 +263,6 @@ section.wineCard div.row table tr:last-child td {
 }
 
 section.wineCard div.row table td {
-  text-align: center;
   border-bottom: 1px solid #282828;
   border-right: 1px solid #282828;
 }
@@ -330,5 +329,333 @@ section.wineCard div.row div.button {
 
 section.wineCard div.row div.button:hover {
   background: #78661c;
+}
+
+section.wineCard div.row .photoWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: space-around;
+      -ms-flex-align: space-around;
+          align-items: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+}
+
+section.wineCard div.row .photoWrapper .big {
+  width: 100%;
+}
+
+section.wineCard div.row .photoWrapper .small {
+  width: 255px;
+}
+
+section.degustation-booking {
+  height: 767px;
+  background: #282828;
+  padding: 129px 0 100px;
+}
+
+section.degustation-booking .wrapper {
+  height: 538px;
+  border: 3px solid #C4C4C4;
+  position: relative;
+}
+
+section.degustation-booking .wrapper img.grape {
+  position: absolute;
+  top: -69px;
+  left: -30px;
+  height: 260px;
+  width: 260px;
+}
+
+section.degustation-booking .wrapper img.barrel {
+  position: absolute;
+  top: -65px;
+  right: -53px;
+  height: 200px;
+  width: 260px;
+}
+
+section.degustation-booking .wrapper h2.title.booking {
+  margin: 0;
+  position: absolute;
+  top: -29px;
+  left: 310px;
+  background: #282828;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 50px;
+  gap: 10px;
+  width: 490px;
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 150%;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+section.degustation-booking .wrapper .divider {
+  width: 118px;
+  height: 1px;
+  background: #FFFFFF;
+  margin: 65px auto 0;
+}
+
+section.degustation-booking .wrapper p {
+  margin: 40px auto 0;
+  color: #FFFFFF;
+  width: 539px;
+  height: 72px;
+  text-align: center;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+section.degustation-booking .wrapper form {
+  margin: 81px auto 0;
+  width: 540px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section.degustation-booking .wrapper form input {
+  background: #282828;
+  border: none;
+  border-bottom: 1px solid #FFFFFF;
+  outline: none;
+  padding-bottom: 10px;
+  color: #FFFFFF;
+}
+
+section.degustation-booking .wrapper form input[name='name'], section.degustation-booking .wrapper form input[name='tel'] {
+  width: 255px;
+}
+
+section.degustation-booking .wrapper form input[name='name']::-webkit-input-placeholder, section.degustation-booking .wrapper form input[name='tel']::-webkit-input-placeholder {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 150%;
+  color: #FFFFFF;
+}
+
+section.degustation-booking .wrapper form input[name='name']:-ms-input-placeholder, section.degustation-booking .wrapper form input[name='tel']:-ms-input-placeholder {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 150%;
+  color: #FFFFFF;
+}
+
+section.degustation-booking .wrapper form input[name='name']::-ms-input-placeholder, section.degustation-booking .wrapper form input[name='tel']::-ms-input-placeholder {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 150%;
+  color: #FFFFFF;
+}
+
+section.degustation-booking .wrapper form input[name='name']::placeholder, section.degustation-booking .wrapper form input[name='tel']::placeholder {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 150%;
+  color: #FFFFFF;
+}
+
+section.degustation-booking .wrapper form input[type='submit'] {
+  margin-top: 50px;
+  width: 100%;
+  border: 1px solid #FFFFFF;
+  padding: 15px 30px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+section.degustation-booking .wrapper form input[type='submit']:hover {
+  background-color: #FFFFFF;
+  color: #282828;
+}
+
+section.degustation-booking .wrapper form select {
+  margin-top: 40px;
+  width: 100%;
+  background: #282828;
+  border: none;
+  border-bottom: 1px solid #FFFFFF;
+  padding-bottom: 10px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  cursor: pointer;
+  outline: none;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 150%;
+  color: #FFFFFF;
+}
+
+section.degustation-booking .wrapper form select option {
+  background-color: #282828;
+  padding: 10px;
+}
+
+footer {
+  height: 220px;
+  background: #998431;
+  padding: 50px 0;
+}
+
+footer .links {
+  margin: 0 auto;
+  border-top: 1px solid #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
+  height: 60px;
+}
+
+footer .links ul {
+  padding: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+}
+
+footer .links ul li {
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .links ul li a {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: center;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+footer .contacts {
+  border-bottom: 1px solid #FFFFFF;
+  height: 60px;
+}
+
+footer .contacts ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .contacts ul li {
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border-left: 1px solid #FFFFFF;
+  padding: 0 50px 0 50px;
+}
+
+footer .contacts ul li:first-child {
+  padding-left: 0;
+  border-left: none;
+}
+
+footer .contacts ul li:last-child {
+  padding-right: 0;
+}
+
+footer .contacts ul li.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 260px;
 }
 /*# sourceMappingURL=styles.css.map */

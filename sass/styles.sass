@@ -73,22 +73,22 @@ section.firstScreen
             justify-content: center
             transition: all 0.5s
             cursor: pointer
-        .anchor.wineCard:before
+        .anchor.toWineCard:before
             content: ''
             height: 50px
             width: 0
             transition: all 0.5s
             background: url(../img/icons/down-arrow.png) center center/contain no-repeat
-        .anchor.wineCard:hover:before
+        .anchor.toWineCard:hover:before
             width: 20px
             margin-right: 15px
-        .anchor.degust:after
+        .anchor.toDegust:after
             content: ''
             height: 50px
             width: 0
             transition: all 0.5s
             background: url(../img/icons/down-arrow.png) center center/contain no-repeat
-        .anchor.degust:hover:after
+        .anchor.toDegust:hover:after
             width: 20px
             margin-left: 15px
 section.longage
@@ -180,7 +180,6 @@ section.wineCard
             tr:last-child td
                 border-bottom: none
             td
-                text-align: center
                 border-bottom: 1px solid #282828
                 border-right: 1px solid #282828
                 &:first-child
@@ -225,3 +224,195 @@ section.wineCard
             transition: all .5s
             &:hover
                 background: #78661c
+        .photoWrapper
+            display: flex
+            justify-content: space-around
+            align-items: space-around
+            flex-wrap: wrap
+            gap: 30px
+            .big
+                width: 100%
+            .small
+                width: 255px
+section.degustation-booking
+    height: 767px
+    background: #282828
+    padding: 129px 0 100px
+    .wrapper
+        height: 538px
+        border: 3px solid #C4C4C4
+        position: relative
+        img.grape
+            position: absolute
+            top: -69px
+            left: -30px
+            height: 260px
+            width: 260px
+        img.barrel
+            position: absolute
+            top: -65px
+            right: -53px
+            height: 200px
+            width: 260px
+        h2.title.booking
+            margin: 0
+            position: absolute
+            top: -29px
+            left: 310px
+            background: #282828
+            display: flex
+            flex-direction: row
+            justify-content: center
+            align-items: center
+            padding: 0px 50px
+            gap: 10px
+            width: 490px
+            font-family: 'Playfair Display'
+            font-style: normal
+            font-weight: 700
+            font-size: 36px
+            line-height: 150%
+            text-align: center
+            color: #FFFFFF
+        .divider
+            width: 118px
+            height: 1px
+            background: #FFFFFF
+            margin: 65px auto 0
+        p
+            margin: 40px auto 0
+            color: #FFFFFF
+            width: 539px
+            height: 72px
+            text-align: center
+            font-family: 'Montserrat'
+            font-style: normal
+            font-weight: 400
+            font-size: 16px
+            line-height: 150%
+        form
+            margin: 81px auto 0
+            width: 540px
+            display: flex
+            justify-content: space-between
+            flex-wrap: wrap
+            input
+                background: #282828
+                border: none
+                border-bottom: 1px solid #FFFFFF
+                outline: none
+                padding-bottom: 10px
+                color: #FFFFFF
+                &[name='name'], &[name='tel']
+                    width: 255px
+                    &::placeholder
+                        font-family: 'Montserrat'
+                        font-style: normal
+                        font-weight: 500
+                        font-size: 13px
+                        line-height: 150%
+                        color: #FFFFFF
+                &[type='submit']
+                    margin-top: 50px
+                    width: 100%
+                    border: 1px solid #FFFFFF
+                    padding: 15px 30px
+                    font-family: 'Montserrat'
+                    font-style: normal
+                    font-weight: 500
+                    font-size: 16px
+                    line-height: 20px
+                    text-align: center
+                    letter-spacing: 0.05em
+                    text-transform: uppercase
+                    color: #FFFFFF
+                    transition: all 0.5s
+                    &:hover
+                        background-color: #FFFFFF
+                        color: #282828
+            select
+                margin-top: 40px
+                width: 100%
+                background: #282828
+                border: none
+                border-bottom: 1px solid #FFFFFF
+                padding-bottom: 10px
+                appearance: none
+                cursor: pointer
+                outline: none
+                font-family: 'Montserrat'
+                font-style: normal
+                font-weight: 500
+                font-size: 13px
+                line-height: 150%
+                color: #FFFFFF
+                option
+                    background-color: #282828
+                    padding: 10px 
+footer
+    height: 220px
+    background: #998431
+    padding: 50px 0
+    .links
+        margin: 0 auto
+        border-top: 1px solid #FFFFFF
+        border-bottom: 1px solid #FFFFFF
+        height: 60px
+        ul
+            padding: 0
+            list-style-type: none
+            display: flex
+            justify-content: space-between
+            align-items: center
+            margin: 0
+            li
+                height: 60px
+                display: flex
+                justify-content: space-between
+                align-items: center
+                a
+                    font-family: 'Montserrat'
+                    font-style: normal
+                    font-weight: 400
+                    font-size: 14px
+                    line-height: 150%
+                    text-align: center
+                    color: #FFFFFF
+                    text-decoration: none
+    .contacts
+        border-bottom: 1px solid #FFFFFF
+        height: 60px
+        ul
+            padding: 0
+            margin: 0  
+            list-style-type: none
+            display: flex
+            justify-content: space-between
+            align-items: center
+            li
+                height: 60px
+                display: flex
+                justify-content: space-between
+                align-items: center
+                font-family: 'Montserrat'
+                font-style: normal
+                font-weight: 600
+                font-size: 14px
+                line-height: 150%
+                text-align: center
+                text-transform: uppercase
+                color: #FFFFFF
+                border-left: 1px solid #FFFFFF
+                padding: 0 50px 0 50px
+                &:first-child
+                    padding-left: 0
+                    border-left: none
+                &:last-child
+                    padding-right: 0
+                &.social
+                    display: flex
+                    justify-content: space-between
+                    align-items: center
+                    width: 260px
+                    padding: 
+    
