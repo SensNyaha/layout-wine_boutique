@@ -1,0 +1,334 @@
+.container {
+  max-width: 1110px;
+  padding: 0;
+}
+
+section.firstScreen {
+  margin: 0 auto;
+  padding: 30px 0 165px 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#282828), to(rgba(40, 40, 40, 0))), url("../img/bg/bg-first-screen.jpg") center center no-repeat, #EDEDED;
+  background: linear-gradient(180deg, #282828 0%, rgba(40, 40, 40, 0) 100%), url("../img/bg/bg-first-screen.jpg") center center no-repeat, #EDEDED;
+  height: 900px;
+}
+
+section.firstScreen .contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.firstScreen .contacts .address, section.firstScreen .contacts .phone {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  color: #FFFFFF;
+  line-height: 150%;
+}
+
+section.firstScreen nav {
+  height: 47px;
+  margin-top: 20px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  color: #FFFFFF;
+  line-height: 150%;
+}
+
+section.firstScreen nav ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0;
+  text-align: center;
+}
+
+section.firstScreen nav ul li {
+  display: block;
+  width: calc(1110px / 4);
+  border: 1px solid #FFFFFF;
+  padding: 13px;
+  cursor: pointer;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+}
+
+section.firstScreen nav ul li:hover {
+  color: #746724;
+  background-color: #FFFFFF;
+}
+
+section.firstScreen nav ul li:first-child {
+  border-left: none;
+}
+
+section.firstScreen nav ul li:last-child {
+  border-right: none;
+}
+
+section.firstScreen nav ul li a {
+  color: inherit;
+  text-decoration: none;
+}
+
+section.firstScreen .anchors {
+  margin-top: 583px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+
+section.firstScreen .anchors .button {
+  width: 203px;
+  height: 50px;
+  background: #99862A;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  line-height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+section.firstScreen .anchors .anchor.wineCard:before {
+  content: '';
+  height: 50px;
+  width: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  background: url(../img/icons/down-arrow.png) center center/contain no-repeat;
+}
+
+section.firstScreen .anchors .anchor.wineCard:hover:before {
+  width: 20px;
+  margin-right: 15px;
+}
+
+section.firstScreen .anchors .anchor.degust:after {
+  content: '';
+  height: 50px;
+  width: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  background: url(../img/icons/down-arrow.png) center center/contain no-repeat;
+}
+
+section.firstScreen .anchors .anchor.degust:hover:after {
+  width: 20px;
+  margin-left: 15px;
+}
+
+section.longage {
+  height: 856px;
+  background: #282828;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+section.longage .wrapper {
+  border: 3px solid #C4C4C4;
+  padding: 60px 187px 60px 187px;
+  height: 656px;
+}
+
+section.longage .wrapper h2 {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 150%;
+  text-align: center;
+  color: #FFFFFF;
+  width: 736px;
+}
+
+section.longage .wrapper .divider {
+  width: 160px;
+  height: 1px;
+  background: #FFFFFF;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+section.longage .wrapper p {
+  margin-top: 40px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+section.longage .wrapper img {
+  margin: 0 auto;
+  margin-top: 50px;
+  display: block;
+}
+
+section.wineCard {
+  height: 1038px;
+  background: #E6E3C4;
+  padding: 80px 0 80px 0;
+}
+
+section.wineCard div.row {
+  border-top: 1px solid #998431;
+  border-bottom: 1px solid #998431;
+  height: 878px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+section.wineCard div.row .novelty {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #000000;
+}
+
+section.wineCard div.row .label {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 150%;
+  color: #282828;
+  margin-top: 30px;
+}
+
+section.wineCard div.row .divider {
+  width: 160px;
+  height: 1px;
+  background: #282828;
+  margin-top: 30px;
+}
+
+section.wineCard div.row p {
+  margin-top: 30px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #282828;
+  width: 445px;
+}
+
+section.wineCard div.row table {
+  margin-top: 30px;
+  height: 228px;
+  width: 445px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #282828;
+}
+
+section.wineCard div.row table tr:last-child td {
+  border-bottom: none;
+}
+
+section.wineCard div.row table td {
+  text-align: center;
+  border-bottom: 1px solid #282828;
+  border-right: 1px solid #282828;
+}
+
+section.wineCard div.row table td:first-child {
+  padding: 31px 24px 26px 19px;
+}
+
+section.wineCard div.row table td:last-child {
+  border-right: none;
+  padding-left: 30px;
+  padding-bottom: 15px;
+}
+
+section.wineCard div.row table td h3.name {
+  font-family: 'Playfair Display';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  margin: 0;
+  margin-top: 10px;
+}
+
+section.wineCard div.row table td p.descr {
+  margin: 0;
+  margin-top: 5px;
+  width: 100%;
+}
+
+section.wineCard div.row div.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 30px;
+  gap: 10px;
+  width: 254px;
+  height: 50px;
+  left: 405px;
+  top: 2604px;
+  background: #998431;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  cursor: pointer;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+section.wineCard div.row div.button:hover {
+  background: #78661c;
+}
+/*# sourceMappingURL=styles.css.map */
